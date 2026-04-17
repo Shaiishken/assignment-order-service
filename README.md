@@ -1,15 +1,15 @@
 # Order Service
 
-Сервис для работы с заказами.  
-Создает заказ, отправляет запрос в payment-service через gRPC и обновляет статус.
+This service manages orders.  
+It creates orders, calls the payment service via gRPC, and updates order status.
 
-## Что используется
+## Tech stack
 - Go
-- Gin (HTTP)
+- Gin (HTTP API)
 - gRPC
 - PostgreSQL
 
-## Запуск
+## Run
 
 ```bash
 go run cmd/app/main.go
